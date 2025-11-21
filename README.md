@@ -1,70 +1,146 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Lottery Results Extension (Chrome Extension)
 
-## Available Scripts
+A Chrome extension that displays **real-time results** from the main Brazilian Federal Lottery games, such as Mega-Sena, Quina, Lotofácil, and others.  
+The extension integrates directly with an **external API** to fetch the latest lottery game results as soon as the user opens the extension popup.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Fetches and displays the most recent lottery results.
+- Simple, lightweight, and responsive interface.
+- Automatic updates via API integration.
+- Supports multiple lottery games (Mega-Sena, Quina, Lotofácil, and more).
+- Organized codebase following React best practices.
+- Designed for future improvements and feature expansion.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🧰 Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **ReactJS**
+- **JavaScript (ES6+)**
+- **Create React App**
+- **Chrome Extensions API**
+- **Fetch API (async/await)**
+- **HTML / CSS**
+- **Git & GitHub**
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📦 Installation & Development Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/your-username/your-repository.git
+cd your-repository
 
-### `npm run eject`
+Install the dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Start the development server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The app will run at http://localhost:3000/.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+🧪 Building the Chrome Extension
 
-### Code Splitting
+To generate the production build:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+npm run build
 
-### Analyzing the Bundle Size
+This will create a build/ folder with the final files.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To install the extension in Chrome:
 
-### Making a Progressive Web App
+1. Open chrome://extensions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+2. Enable Developer mode
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+3. Click Load unpacked
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+4. Select the build/ folder
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+---
+
+🧩 Project Structure
+
+src/
+ ├── components/
+ │    ├── LotteryList.jsx
+ │    ├── LotteryCard.jsx
+ │    └── ...
+ ├── services/
+ │    └── lotteryApi.js     # API integration logic
+ ├── assets/
+ ├── App.jsx
+ ├── index.js
+ └── manifest.json          # Chrome extension configuration
+
+
+---
+
+🔗 API Integration
+
+This extension uses a public API that provides updated results from Brazilian Federal Lottery games.
+
+The API returns:
+
+Game name
+
+Drawn numbers
+
+Contest information
+
+Draw date
+
+
+
+---
+
+🛠️ Planned Improvements
+
+Display historical results and past contests.
+
+Push notifications when new results are available.
+
+Settings screen for selecting favorite games.
+
+Dark mode support.
+
+
+
+---
+
+👨‍💻 About the Developer
+
+Developed by Mr Isaias, a Front-End Developer focused on React, JavaScript, and Chrome extension development.
+Passionate about building practical tools and improving user experiences.
+
+
+---
+
+📸 Screenshots (Optional)
+
+Add popup screenshots here.
+
+
+---
+
+📄 License
+
+This project is licensed under the MIT License.
+
